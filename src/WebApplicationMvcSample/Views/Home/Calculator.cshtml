@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h2>Calculator</h2>
+
+<form>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>A:</label>
+                <input type="number" id="a" class="form-control" value="10" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Operator:</label>
+                <select id="o" class="form-control">
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>B:</label>
+                <input type="number" id="b" class="form-control" value="5" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Result:</label>
+                <p class="form-control-static" id="output">
+                    -
+                </p>
+                <i id="loader" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-block" type="submit">Calc!</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script src="/js/calc.js"></script>

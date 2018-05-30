@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>Contact form</h3>
+
+<p>
+    Your name is: @ViewData["Name"]
+</p>
+
+<form action="http://insightscalc.azurewebsites.net/Home/About" method="post">
+    <input type="text" name="name" placeholder="Your name" />
+    
+    <button type="submit">Ok</button>
+</form>
